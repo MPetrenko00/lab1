@@ -16,6 +16,28 @@
     <button onclick="calculateArea()">Обчислити площу</button>
 
     <p id="result">Площа трикутника буде виведена тут.</p>
-    <script src="js/app.js"></script>
+
+    <ul>
+        <li><a href="lab2/alert.html" target="_blank">lab1.2(Alert)</a></li>
+        <li><a href="lab3/index.html" target="_blank">lab1.3</a></li>
+        <li><a href="lab4/index.html" target="_blank">lab1.4</a></li>
+        <li><a href="lab5/index.html" target="_blank">lab1.5</a></li>
+    </ul>
+
+    <script>
+        function calculateArea() {
+            var catet1 = parseFloat(document.getElementById("catet1").value);
+            var catet2 = parseFloat(document.getElementById("catet2").value);
+        
+            if (isNaN(catet1) || isNaN(catet2)) {
+                document.getElementById("result").textContent = "Введіть коректні значення для катетів.";
+                return;
+            }
+        
+        
+            var area = 0.5 * catet1 * catet2;
+            document.getElementById("result").textContent = "Площа трикутника: " + area.toFixed(2);
+        }
+    </script>
 </body>
 </html>

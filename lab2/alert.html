@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert</title>
+</head>
+<body>
+    <SCRIPT>
+        var s, i = 0;
+        s = confirm("2+2=4 ?");
+        if (s == true) {
+            alert("Правильно!");
+            i++;
+        } else {
+            alert("Hi!");
+        }
+        
+        s = confirm("2+3=6 ?");
+        if (s == false) {
+            alert("Правильно!");
+            i++;
+        } else {
+            alert("Ні");
+        }
+        
+        s = confirm("2+4=6 ?");
+        if (s == true) {
+            alert("Правильно!");
+            i++;
+        } else {
+            alert("Hi!");
+        }
+        
+        s = prompt("2+2= ?", " ");
+        if (s == 4) {
+            alert("Правильно!");
+            i++;
+        } else {
+            alert("Hi!");
+        }
+        
+        s = prompt("2+3= ");
+        if (s == 5) {
+            alert("Правильно!");
+            i++;
+        } else {
+            alert("Hi!");
+        }
+        
+        s = prompt("2+4= ");
+        if (s == 6) {
+            alert("Правильно!");
+            i++;
+        } else {
+            alert("Hi!");
+        }
+        
+        if (i >= 5) {
+            alert("Чудово");
+        } else if (i >= 3) {
+            alert("Добре");
+        } else {
+            alert("Погано");
+        }
+        alert("Сума балів=" + i);
+        </SCRIPT>
+</body>
+</html>

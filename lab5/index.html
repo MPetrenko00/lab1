@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дані, представлені прапорцем. Анкета перекладача</title>
+</head>
+<body>
+    <script>
+        function grant() {
+            var d = document;
+            var k = 0;
+            if ((d.form1.elements[0]).checked)
+                k = k + Number(d.form1.elements[0].value)
+            if ((d.form1.elements[1]).checked)
+                k = k + Number(d.form1.elements[1].value)
+            if ((d.form1.elements[2]).checked)
+                k = k + Number(d.form1.elements[2].value)
+            form1.ww.value = " Вам належить винагорода " + k + " y.e."
+        }
+    </script>
+    
+    <h2> Анкета для перекладачів </h2>
+    Вкажіть ті мови, якими Ви володієте досконало: <br>
+    <FORM name="form1">
+        <input type="checkbox" name="lan" value=100> роcійська<br>
+        <input type="checkbox" name="lan" value=200> англійська <br>
+        <input type="checkbox" name="lan" value=300>французська<br>
+        <input type="button" value=Винагорода onClick="grant()">
+        <hr>
+        <input type="Text" size=50 name="ww" value=""><br>
+        <input type="reset" value=" Скасувати">
+    </FORM>
+    <hr>
+
+</body>
+</html>

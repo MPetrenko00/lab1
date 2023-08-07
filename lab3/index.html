@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Обробка події Change - зміна значення елемента</title>
+</head>
+<body>
+    <script>
+
+        function srec(obj)
+        {
+            obj.res.value=obj.num1.value* obj.num1.value
+        }
+
+    </script>
+
+    <h1> Обчислення площі квадрата </h1>
+    
+    <FORM name="form1">
+        Сторона: <input type="text" size=7 name="num1" onChange="srec(form1)">
+        <hr>
+        Площа: <input type="text" size=7 name="res">
+        <hr>
+        <input type="reset" value=Оновити>
+    </FORM>
+    
+</body>
+</html>
